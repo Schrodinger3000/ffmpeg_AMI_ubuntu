@@ -5,9 +5,11 @@
 if pgrep -x "ffmpeg" > /dev/null
 then
         echo running
+        exit
 if pgrep -x "aws" > /dev/null
 then
-        echo running        
+        echo running
+        exit
 else
         ~/MyScript/encoding.sh
 fi

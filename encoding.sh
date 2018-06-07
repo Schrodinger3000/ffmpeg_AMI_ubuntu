@@ -17,7 +17,7 @@ rm -rf ~/Proxies/* ;\
 
 #06 - Encoding MXF to MOV proxy
 for i in ~/Encoded/*/*/*.MXF ; do
-        ffmpeg -y -i "$i" -c:v prores_ks -profile:v 0 -qscale:v 12 -vendor ap10 -pix_fmt yuv422p10le -s 1920x1080 -r 48 -filter_complex 'amerge=inputs=4,channelmap=channel_layout=quad' -c:a pcm_s24le -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:fontsize=24: text=PROXY y=h-(2*lh): fontcolor=white: box=1: boxcolor=0x00000000@1" -an -f mov "$i".mov ;\
+        ffmpeg -y -i "$i" -c:v prores_ks -profile:v 0 -qscale:v 12 -vendor ap10 -pix_fmt yuv422p10le -s 1920x1080 -r 48 -filter_complex 'amerge=inputs=4,channelmap=channel_layout=quad' -c:a pcm_s24le -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:fontsize=24: text=PROXY: fontcolor=white: box=1: boxcolor=0x00000000@1" -an -f mov "$i".mov ;\
 
 
 done

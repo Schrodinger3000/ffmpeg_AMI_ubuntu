@@ -22,6 +22,13 @@ I could have done it easier but didn't feel like spending more time than I alrea
 
 For the Lambda part, you can follow this Tutorial and adapt it to this solution : https://aws.amazon.com/blogs/compute/scheduling-ssh-jobs-using-aws-lambda/
 
+The Lambda Folder are included:
+* Policies
+1. lambda_basic_execution.json (which should be in the trigger and the worker)
+2. trigger_policy.json
+3. worker_policy.json
+* worker_function.zip (if you follow tutorial, this is the compiled and zipped version including all dependencies)
+
 Problem I have encountered:
 *Lambda overrides **queue.sh** conditions and launches **encoding.sh** no matter what when the CloudWatch event is triggered.
 

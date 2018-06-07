@@ -1,4 +1,4 @@
-# ffmpeg_AMI_ubuntu
+# FFmpeg For Amazon Linux with Ubuntu
 
 Canon MXF Proxy encoding machine on Amazon Linux with Ubuntu for instance
 
@@ -19,5 +19,12 @@ And finally launch an Amazon **UBUNTU** instance and in the **ADVANCED** setting
 I could have done it easier but didn't feel like spending more time than I already did on this!
 
 ![peaws.jpeg](https://images.zenhubusercontent.com/5b191e8c80f2a54a594719b5/5e1e0371-5cb8-4fa4-ab95-cf41a3906cef)
+
+For the Lambda part, you can follow this Tutorial and adapt it to this solution : https://aws.amazon.com/blogs/compute/scheduling-ssh-jobs-using-aws-lambda/
+
+Problem I have encountered:
+*Lambda overrides **queue.sh** conditions and launches **encoding.sh** no matter what when the CloudWatch event is triggered.
+
+I suggest root volume stays small and hold the system only and add a secondary volume mounted and move this solution to it and adapt all paths to reflect this change.
 
 Enjoy

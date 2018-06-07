@@ -28,7 +28,7 @@ The Lambda Folder are included:
 2. trigger_policy.json
 3. worker_policy.json
 * worker_function.zip (if you follow tutorial, this is the compiled and zipped version including all dependencies)
-FYI you will have to extract worker_function.py from it and edit the path to launch the command
+FYI you will have to extract worker_function.py from it, edit the path to launch the command and edit the Pem Key.
 
 Problem I have encountered:
 *Lambda overrides **queue.sh** conditions and launches **encoding.sh** no matter what when the CloudWatch event is triggered.

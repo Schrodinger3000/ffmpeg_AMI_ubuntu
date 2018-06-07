@@ -19,8 +19,8 @@ sudo chmod 640 -R ~/MyScript ;\
 sudo chmod 640 -R ~/Encoded ;\
 sudo chmod 640 -R ~/Proxies ;\
 
-#Transfer srpits from s3
-aws s3 mv s3://erdna-test/scripts/ ~/MyScript/ --recursive ;\
+#Transfer scripts from s3 (this is where you have encoding.sh and queue.sh before launching your instance)
+aws s3 mv s3://"Bucket Name"/scripts/ ~/MyScript/ --recursive ;\
 
 #complete recursive permission
 sudo chmod 777 -R ~/MyScript ;\

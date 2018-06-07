@@ -18,4 +18,6 @@ And finally launch an Amazon **UBUNTU** instance and in the **ADVANCED** setting
 
 I could have done it easier but didn't feel like spending more time than I already did on this!
 
+![alt text]( ffmpeg_AMI_ubuntu/peaws.jpeg)
+
 Enjoy

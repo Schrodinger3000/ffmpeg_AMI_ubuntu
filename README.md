@@ -18,7 +18,7 @@ And finally launch an Amazon **UBUNTU** instance and in the **ADVANCED** setting
 
 I could have done it easier but didn't feel like spending more time than I already did on this!
 
-![peaws.jpeg](https://images.zenhubusercontent.com/5b191e8c80f2a54a594719b5/5e1e0371-5cb8-4fa4-ab95-cf41a3906cef)
+![preAWS.jpeg](https://images.zenhubusercontent.com/5b191e8c80f2a54a594719b5/170ce1f0-2d45-4a81-be9f-63f66a7c5d18)
 
 For the Lambda part, you can follow this Tutorial and adapt it to this solution : https://aws.amazon.com/blogs/compute/scheduling-ssh-jobs-using-aws-lambda/
 

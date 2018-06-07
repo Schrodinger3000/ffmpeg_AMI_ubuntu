@@ -1,6 +1,6 @@
 # FFmpeg For Amazon Linux with Ubuntu
 
-Canon MXF Proxy encoding machine on Amazon Linux with Ubuntu for instance
+Canon MXF Proxy encoding machine on Amazon Linux with Ubuntu for instance. This is to solve the issue of mapping sound that every other apps have, switching channel 3 and 4 to 1 and 2 leaving 3 and 4 blank. Even AME has this issue!
 
 **First step** is to have Role with Ec2 accessing S3 Buckets with Reading and Writing permission.
 
